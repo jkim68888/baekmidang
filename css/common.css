@@ -16,7 +16,7 @@ button, input[type=button], input[type=submit], input[type=reset]{ cursor: point
 /* layout */
 header{ position: fixed; top: 0; left: 0; z-index: 50000; width: 100%; min-width: 1180px; height: 120px; background-color: #fff; box-shadow: 1px 1px 2px #ededed; }
 .htop{ width: 100%; height: 40px; margin: 0 auto; background-color: #736b74; }
-.hbottom{ position: relative; width: 1180px; height: 80px; margin: 0 auto; }
+.hbottom{ width: 1180px; height: 80px; margin: 0 auto; }
 footer{ width: 100%; min-width: 1180px; height: 340px; border-top: 1px solid #736b74; box-sizing: border-box; }
 .ftop{ width: 1180px; height: 40px; margin: 40px auto 0; }
 .fbottom{ width: 1180px; height: 250px; margin: 0 auto; }
@@ -26,17 +26,18 @@ footer{ width: 100%; min-width: 1180px; height: 340px; border-top: 1px solid #73
 
 /* htop */
 .htop ul{ float: right; }
-.htop li{ float: left; margin-left: 20px; line-height: 40px; }
+.htop li{ float: left; height: 40px; margin-left: 20px; line-height: 40px; }
 .htop a{ color: #e1b7a7; }
 .htop li:before{ position: relative; top: -2px; right: 10px; content: '|'; color: #e1b7a7; font-size: 11px; }
 .htop li:first-child:before{ content: ''; }
 
 /* gnb */
-.hbottom h1{ position: relative; float: left; top: 7px; }
-.gnb > ul{ position: absolute; float: right; right: 0; }
-.gnb > ul >li{ position: relative; float: left; line-height: 80px; margin-left: 70px; }
+.hbottom h1{ float: left; position: relative; top: 7px; }
+.gnb{ float: right; }
+.gnb > ul > li{ position: relative; float: left; width: 140px; text-align: center; line-height: 80px;  }
 .gnb .main_nav{ font-size: 18px; }
-.gnb .sub_nav{ display: none; position: absolute; top: 65px; left: -10px; z-index: 4010; width: calc(100% + 25px); height: 300px; padding: 20px 0; box-sizing: border-box; text-align: center; line-height: 50px; }
+.gnb .sub_nav{ display: none; position: absolute; top: 65px; z-index: 4010; width: 100%; height: 300px; padding: 20px 0; box-sizing: border-box; text-align: center; line-height: 50px; }
+.sub_nav li{ text-align: center; }
 .gnb .sub_nav a{ font-size: 16px; }
 .sub_bg{ display: none; position: absolute; top: 120px; left: 0; z-index: 4000; width: 100%; min-width: 1180px; height: 300px; background-color: #fff; border-top: 1px solid #736b74; border-bottom: 1px solid #736b74; box-sizing: border-box; }
 
