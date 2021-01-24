@@ -1,3 +1,19 @@
+//mobile - 모바일기기장치에서 접속시 모바일주소(http://mjkim68888.dothome.co.kr)이동
+$(document).ready(function(){
+    var mobile_keys = new Array('iPhone','iPad','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+    
+    if(document.URL.match('move_pc_screen')){
+        $('.mobile_btn').fadeIn(0);
+        mobile_keys = null; 
+    }
+
+    for(var i in mobile_keys){
+        if(navigator.userAgent.match(mobile_keys[i]) != null){ 
+            location.href = 'http://mjkim68888.dothome.co.kr';
+        }
+    }
+});
+
 //popup
 $(document).ready(function(){
     
